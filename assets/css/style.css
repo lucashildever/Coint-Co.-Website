@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+nav  {
+    position: relative;
+    height: 70px;
+    background-color: #2B2523;
+
+    color: white;
+    font-family: 'Gentium Basic';
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 {
+    display: none;
+}
+
+.nav-links a {
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    padding-bottom: 8px;
+
+    font-size: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.over-menu {
+    display: none;
+}
+
+.nav-links a:hover {
+    border-bottom: 5px solid white;
+}
+
+.nav-active {
+    border-bottom: 5px solid white;
+}
+
+.icons-nav a {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    height: 22px;
+}
+
+.icons-nav {
+    position: absolute;
+    right: 4vw;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.logo a img {
+    height: 35px;
+    position: absolute;
+    left: 4vw;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.screen-img, .section-res {
+    display: none;
+}
+
+#hero2 {
+    display: none;
+}
+
+#footer-res {
+    display: none;
+}
+
+.hero-content {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hero-outline-detail {
+    position: absolute;
+    left: 9vw;
+    height: 400px;
+    top: 90px;
+    width: 40vw;
+    border: 3px solid white;
+}
+
+.discover {
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 7vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), rgba(43, 37, 35, 0.2);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(25px);
+}
+
+.discover h1 {
+    color: #2B2523;
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    text-align: justify;
+    font-size: 4vw;
+    margin-top: 35px;
+    margin-bottom: 2vw;
+}
+
+.discover p {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    color: #2B2523;
+    font-size: 1.7vw;
+    width: 30vw;
+    margin-bottom: 2vw;
+}
+
+.discover button {
+    padding-top: 0.9vw;
+    padding-bottom: 0.9vw;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 35px;
+    margin-bottom: 35px;
+    background-color: #2B2523;
+
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: white;
+
+    cursor: pointer;
+}
+
+.discover button:hover {
+    transform: scale(1.03);
+}
+
+.carousel img {
+    width: 50vw;
+    height: auto;
+    margin-right: 7vw;
+}
+
+#section2 {
+    position: relative;
+}
+
+.section2-outline-detail {
+    width: 30vw;
+    height: 300px;
+    border: 3px solid white;
+
+    position: absolute;
+    right: 10vw;
+    top: 410px;
+}
+
+.coin-outline-detail {
+    position: absolute;
+    width: 19.6vw;
+    height: 480px;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 150px;
+    left: 17.65vw;
+    top: 410px;
+
+    
+}
+
+.floating-coin div {
+    background-color: #2B2523;
+    height: 250px;
+    width: 20vw;
+
+    z-index: 1;
+}
+
+.floating-coin img {
+    width: 28vw;
+    height: auto;
+    transform: translateY(80px);
+    z-index: 2;
+}
+
+.floating-coin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2-desc {
+    width: 27vw;
+    margin-left: 10vw;
+    padding-left: 3.3vw;
+    padding-right: 3.3vw;
+
+    transform: translateY(180px);
+
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), rgba(43, 37, 35, 0.2);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(25px);
+}
+
+.section2-desc p {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 2.5vw;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+.section2-image {
+    height: 400px;
+    background-image: url(/assets/img/moeda-bg1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-divs {
+    display: flex;
+    flex-direction: row;
+
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+}
+/*TEMPORARIO*/
+.image-divs img {
+    padding-top: 140px;
+    width: 75vw;
+}
+.image-divs {
+    
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*TEMPORARIO*/
+
+.image1 {
+    background-image: url(/assets/img/bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 650px;
+    width: 300px;
+    margin-right: 7vw;
+    border-radius: 200px;
+}
+
+.image2 {
+    background-image: url(/assets/img/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 650px;
+    width: 300px;
+    margin-left: 7vw;
+    border-radius: 200px;
+
+    transform: translateY(190px);
+}
+
+.section3-info {
+    background-color: #2B2523;
+    width: 100vw;
+    height: 380px;
+    margin-top: 170px;
+    /* margin-top: 200px; */
+}
+
+.section3-info img {
+    width: 42vw;
+    height: auto;
+    position: absolute;
+    left: 7vw;
+    padding-top: 10px;
+}
+
+.section2-info-content {
+    position: absolute;
+    right: 7vw;
+    width: 35vw;
+    padding-top: 70px;
+}
+
+.section2-info-content p {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 2.5vw;
+
+    color: white;
+}
+
+.section2-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section2-info-content button {
+    margin-top: 50px;
+    padding-top: 0.9vw;
+    padding-bottom: 0.9vw;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 35px;
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    background-color: white;
+}
+
+.image-bg-detail {
+    position: absolute;
+    width: 100vw;
+    transform: translateY(-240px);
+    z-index: -1;
+}
+
+
+.section4-info {
+    background-color: #2B2523;
+    width: 100vw;
+    height: 380px;
+    margin-top: 450px;
+
+}
+
+.section4-info img {
+    width: 42vw;
+    height: auto;
+    position: absolute;
+    right: 7vw;
+    padding-top: 70px;
+}
+
+.section4-info-content {
+    position: absolute;
+    left: 7vw;
+    width: 30vw;
+    padding-top: 70px;
+}
+
+.section4-info-content p {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 2.5vw;
+
+    color: white;
+}
+
+.section4-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section4-info-content button {
+    margin-top: 60px;
+    padding-top: 0.9vw;
+    padding-bottom: 0.9vw;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 35px;
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    background-color: white;
+}
+
+
+.section5-info {
+    background-color: #2B2523;
+    width: 100vw;
+    height: 380px;
+    margin-top: 450px;
+    margin-bottom: 500px;
+
+}
+
+.section5-info img {
+    width: 42vw;
+    height: auto;
+    position: absolute;
+    left: 7vw;
+    padding-top: 70px;
+}
+
+.section5-info-content {
+    position: absolute;
+    right: 7vw;
+    width: 30vw;
+    padding-top: 70px;
+}
+
+.section5-info-content p {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 2.5vw;
+
+    color: white;
+}
+
+.section5-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section5-info-content button {
+    margin-top: 40px;
+    padding-top: 0.9vw;
+    padding-bottom: 0.9vw;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 35px;
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    background-color: white;
+}
+
+.image-bg-detail2 {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    transform: translateY(-100px);
+}
+
+#shop-res {
+    display: none;
+}
+
+.viewer-img img{
+    width: 37vw;
+}
+
+#footer {
+    background-color: #2B2523;
+    height: 500px;
+    width: 100vw;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content2 {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+.footer-content div h3 {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 165%;
+
+    padding-bottom: 30px;
+}
+
+.footer-content div a {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.footer-content3 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content3 h3 {
+    transform: translateY(-25px);
+}
+
+.linkedin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.insta {
+    margin-right: 10px;
+}
+
+#instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title-instructions {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), rgba(43, 37, 35, 0.2);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(25px);
+    width: 80vw; 
+    height: 300px;
+    position: relative;
+}
+
+.title-instructions h1 {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    color: #2B2523;
+    font-size: 300%;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(5vw, -50%)
+}
+
+.content-instructions {
+    background-color: #2B2523;
+    padding-bottom: 150px;
+    width: 80vw;
+
+}
+
+.content-instructions p {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 65px;
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-size: 165%;
+    font-weight: 400;
+    color: white;
+    text-align: justify;
+}
+
+
+
+.content-instructions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    
+}
+
+.content-instructions div img {
+    width: 60vw;
+}
+
+.instructions-link {
+    position: relative;
+}
+
+.instructions-link a {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);;
+    cursor: pointer;
+}
+
+/*shop*/
+#shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.product-desc-img {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), rgba(43, 37, 35, 0.2);
+    box-shadow: 20px 20px 30px rgb(0 0 0 / 12%);
+    backdrop-filter: blur(25px);
+    width: 80vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-desc-img-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 73vw;
+}
+
+.image-viewer {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viewer-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.viewer-options div {
+    padding: 5px;
+}
+
+.product-desc {
+    width: 36vw;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.product-desc h1, .product-desc p, .price  {
+    color: #2B2523;
+}
+
+.price {
+    transform: translateY(20px);
+}
+
+.product-desc h1 {
+    font-size: 5vw;
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 45px;
+    margin-top: 65px;
+}
+
+
+
+.product-desc p {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-size: 165%;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.controller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 36vw;
+}
+
+.btn-minus {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.btn-plus img{
+    height: 50%;
+    cursor: pointer;
+}
+
+.cart-btn {
+    color: white;
+    background-color: #2B2523;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 30px;
+    width: 11vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qtde {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-size: 165%;
+    font-weight: 400;
+    border: 3px solid #2B2523;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 30px;
+    width: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    background-color: #2B2523;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.product-info h1 {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.product-info div div {
+    font-family: 'Gentium Basic';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2.2px;
+}
+
+.product-info div div div div {
+    width: 72vw;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-detail div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 35px;
+}
+
+.detail-bg {
+    background-color: #39302D;
+}
+
+.product-info div {
+    width: 75vw;
+}
+
+.content-instructions span {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-34px);
+}
+
+.content-instructions span div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-instructions span div h2{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Gentium Basic';
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+}
+
+.content-instructions span div img {
+    width: 35vw;
+    padding-right: 3vw;
+}
